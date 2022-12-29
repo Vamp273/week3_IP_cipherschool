@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-content" id="header">
+        <p> WELCOME! </p>
+    </header>
+    <main>
+        <img src="">
+        <p>This is a main</p>
+        <p>This is a main two</p>
+        <p>This is a main three</p>
+        <p>This is a main four</p>
+        <p>This is a main five</p>
+    </main>
+    <footer>This is a footer</footer>
+    <script>
+        let typr = document.querySelector("header");
+        console.log(type);
+
+        let classSelector = document.querySelector(".header-content");
+        console.log(idSelector);
+
+        let idSelector = document.querySelector("#header");
+        console.log(idSelector);
+
+        let document = document.querySelector(".header-content p");
+        console.log(decendent);
+
+        let All = document.querySelectorAll("main p");
+        console.log(All);
+
+        let bg = document
+            .querySelectorAll("main p")
+            .forEach((item) => (item.style.backgroundColor = "blue"));
+
+        // older methods
+        let oldtype = document.getElementByTagName("header");
+        console.log(oldtype);
+
+        let oldclass = document.getElementByClassName("header-content");
+        console.log(oldclass);
+
+        let oldid = document.getElementById("header");
+        console.log(oldid);
+    </script>
+</body>
+</html>
